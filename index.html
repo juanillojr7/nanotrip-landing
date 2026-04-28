@@ -6,7 +6,6 @@
     <title>NanoTrip | Tu equipo de viaje</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        /* Configuracion de colores y fuentes para el tema oscuro */
         tailwind.config = {
             theme: {
                 extend: {
@@ -27,7 +26,7 @@
         <div class="absolute bottom-[-10%] right-[10%] w-[500px] h-[500px] bg-indigo-500 rounded-full mix-blend-multiply filter blur-[128px] opacity-20"></div>
     </div>
 
-    <main class="relative z-10 flex-grow flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-20 w-full max-w-6xl mx-auto">
+    <main class="relative z-10 flex-grow flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-20 w-full max-w-7xl mx-auto">
         
         <div class="text-center w-full mb-16">
             <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight mb-6">
@@ -62,8 +61,38 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="max-w-md mx-auto bg-cardBg p-6 rounded-2xl border border-slate-700 shadow-xl">
+        <div class="w-full mb-24 relative z-20">
+            <h2 class="text-center text-3xl md:text-5xl font-bold mb-16">Diseñada para la acción</h2>
+            
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 items-center justify-items-center">
+                
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand to-indigo-500 rounded-[30px] blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                    <img src="images/Screenshot_20260428_220851.jpg" alt="Pantalla 1" class="relative rounded-[26px] border-4 border-slate-700 shadow-2xl w-full max-w-[280px] transform md:rotate-[-4deg] transition-transform duration-500 hover:rotate-0 hover:scale-105">
+                </div>
+
+                <div class="relative group mt-8 lg:mt-0">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-brand rounded-[30px] blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                    <img src="images/Screenshot_20260428_221136.jpg" alt="Pantalla 2" class="relative rounded-[26px] border-4 border-slate-700 shadow-2xl w-full max-w-[280px] transform md:rotate-[3deg] transition-transform duration-500 hover:rotate-0 hover:scale-105">
+                </div>
+                
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand to-indigo-500 rounded-[30px] blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                    <img src="images/Screenshot_20260428_221218.jpg" alt="Pantalla 3" class="relative rounded-[26px] border-4 border-slate-700 shadow-2xl w-full max-w-[280px] transform md:rotate-[-2deg] transition-transform duration-500 hover:rotate-0 hover:scale-105">
+                </div>
+
+                <div class="relative group mt-8 lg:mt-0">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-brand rounded-[30px] blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                    <img src="images/Screenshot_20260428_221424.jpg" alt="Pantalla 4" class="relative rounded-[26px] border-4 border-slate-700 shadow-2xl w-full max-w-[280px] transform md:rotate-[4deg] transition-transform duration-500 hover:rotate-0 hover:scale-105">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="w-full mb-24">
+            <div class="max-w-md mx-auto bg-cardBg p-6 rounded-2xl border border-slate-700 shadow-xl relative z-10">
                 <h3 class="text-lg font-semibold text-white mb-2">Únete a la lista de espera</h3>
                 <p class="text-sm text-slate-400 mb-4">Sé el primero en enterarte cuando NanoTrip esté disponible.</p>
                 <form class="flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault(); alert('Email guardado con éxito. ¡Gracias!');">
@@ -75,7 +104,7 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
             <div class="bg-cardBg bg-opacity-50 border border-slate-800 p-8 rounded-2xl text-center hover:border-slate-600 transition-colors">
                 <div class="w-14 h-14 bg-brand bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6 text-brand">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
